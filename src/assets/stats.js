@@ -8,10 +8,7 @@ export const character = {
       POW: 0,
       APP: 0,
       EDU: 0,
-      HP: 0,
-      MP: 0,
       LUCK: 0,
-      SAN: 0
     },
     skills: {
       Accounting: 5,

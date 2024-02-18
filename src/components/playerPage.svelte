@@ -2,17 +2,17 @@
   export let playerCharacter: any;
   export let description: any;
   export let picture: any;
-  import StatBlock from "../statBlock.svelte";
+  import StatBlock from "./statBlock.svelte";
   let attributesArray = Object.entries(playerCharacter.attributes);
   let skillsArray = Object.entries(playerCharacter.skills);
   var result: string = "Roll a skill";
-  var colour: string = "bg-secondary";
+  var colour: string = "bg-primary";
   var tagline: string = "";
   $: if (playerCharacter) {
     attributesArray = Object.entries(playerCharacter.attributes);
     skillsArray = Object.entries(playerCharacter.skills);
     result = "Roll a skill";
-    colour = "bg-secondary";
+    colour = "bg-primary";
     tagline = "-";
   }
   let rollStat = (skill: string, stat: number) => {
@@ -49,15 +49,15 @@
       <br />
       <p>{result}</p>
     </div>
-    <div class="mt-6 align-text-center">
+    <div class="mb-6 align-text-center">
       {tagline}
     </div>
 
     {description}
     <div class="h-6" />
 
-    <div class="absolute mt-[185px] mr-[650px] w-48 h-48 border">
-      <img sizes="48px" src={picture} />
+    <div class="absolute mt-[165px] mr-[650px] w-48 h-48 border">
+      <img sizes="48px" alt="player" src={picture} />
     </div>
     <ul class="columns-2 ml-32">
       {#each attributesArray as [key, stat]}

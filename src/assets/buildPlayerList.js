@@ -10,10 +10,7 @@ cliff.attributes = {
   POW: 80,
   APP: 65,
   EDU: 55,
-  HP: 16,
-  MP: 16,
   LUCK: 70,
-  SAN: 80,
 };
 cliff.skills = {
   ...cliff.skills,
@@ -46,10 +43,7 @@ emily.attributes = {
   POW: 65,
   APP: 70,
   EDU: 80,
-  HP: 13,
-  MP: 13,
   LUCK: 55,
-  SAN: 65,
 };
 emily.skills = {
   ...emily.skills,
@@ -82,10 +76,7 @@ max.attributes = {
   POW: 70,
   APP: 60,
   EDU: 70,
-  HP: 15,
-  MP: 14,
   LUCK: 50,
-  SAN: 68,
 };
 max.skills = {
   ...max.skills,
@@ -118,10 +109,7 @@ mcgee.attributes = {
   POW: 55,
   APP: 55,
   EDU: 90,
-  HP: 10,
-  MP: 11,
   LUCK: 60,
-  SAN: 66,
 };
 mcgee.skills = {
   ...mcgee.skills,
@@ -156,10 +144,7 @@ melissa.attributes = {
   POW: 70,
   APP: 70,
   EDU: 80,
-  HP: 12,
-  MP: 14,
   LUCK: 45,
-  SAN: 70,
 };
 melissa.skills = {
   ...melissa.skills,
