@@ -1,9 +1,5 @@
 <script lang="ts">
-  import DiceRoller from "./components/diceRoller.svelte";
-  import PlayerMenu from "./components/playerMenu.svelte";
+  import Site from "./components/Site.svelte";
 </script>
 
-<main>
-  <DiceRoller />
-  <PlayerMenu />
-</main>
+<Site />

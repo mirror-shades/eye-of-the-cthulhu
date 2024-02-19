@@ -1,5 +1,5 @@
 <script lang="ts">
-  import PlayerPage from "./playerPage.svelte";
+  import PlayerPage from "./PlayerPage.svelte";
   import cliff from "../assets/cliff.png";
   import max from "../assets/max.png";
   import emily from "../assets/emily.png";

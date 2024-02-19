@@ -4,12 +4,15 @@
   export let picture: any;
   import Papa from "papaparse";
   import StatBlock from "./statBlock.svelte";
+  import Inventory from "./Inventory.svelte";
+  import { loaded } from "../state";
   const publicSheet =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSzXk5sQ0jOt9JkuHEAWkf3Py22znv9s3ieUKTga5EaCaSunDSceFjSzl15BW9jDPoVxNahOTHISse7/pub?gid=0&single=true&output=csv";
   const privateSheet =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQuiths-iZbpt06WdN1c7dbeaxeIP-2v824-sfKvn8rDITQpvqObNyxIDFdBoBeaL2lMWrI-o7OnsgJ/pub?gid=0&single=true&output=csv";
-  let attributesArray: any = [];
-  let skillsArray: any = [];
+  var inventory: string;
+  var attributesArray: any = [];
+  var skillsArray: any = [];
   var result: string = "Roll a skill";
   var colour: string = "bg-primary";
   var tagline: string = "";
@@ -64,7 +67,7 @@
   }
 
   function formatPlayerData() {
-    if (playerData) {
+    if (playerData && sanList) {
       let attributesLabels = playerData[1];
       let attributes: any;
       let skillsLabels = playerData[9];
@@ -72,26 +75,31 @@
       if (page === "cliff") {
         attributes = playerData[2];
         skills = playerData[10];
+        inventory = playerData[17][1];
         playerSan = sanList[1][1];
       }
       if (page === "emily") {
         attributes = playerData[3];
         skills = playerData[11];
+        inventory = playerData[18][1];
         playerSan = sanList[2][1];
       }
       if (page === "max") {
         attributes = playerData[4];
         skills = playerData[12];
+        inventory = playerData[19][1];
         playerSan = sanList[3][1];
       }
       if (page === "mcgee") {
         attributes = playerData[5];
         skills = playerData[13];
+        inventory = playerData[20][1];
         playerSan = sanList[4][1];
       }
       if (page === "melissa") {
         attributes = playerData[6];
         skills = playerData[14];
+        inventory = playerData[21][1];
         playerSan = sanList[5][1];
       }
       attributes = attributes.slice(1, 10);
@@ -106,6 +114,7 @@
         key,
         skills[index],
       ]);
+      loaded.update((currentValue) => true);
     }
   }
 
@@ -177,6 +186,8 @@
     </ul>
     <div class="h-12" />
   </div>
+
+  <Inventory {inventory} />
 </main>
 
 <style>
