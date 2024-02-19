@@ -18,7 +18,7 @@ const config = {
 
   daisyui: {
     themes: [
-      "forest",
+      "dim",
     ],
   },
 

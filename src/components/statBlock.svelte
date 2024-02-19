@@ -9,7 +9,9 @@
     <button class="btn btn-primary btn-xs" on:click={rollStat(key, stat)}
       >Roll</button
     >
-    {key} -
-    {stat} / {Math.floor(stat / 2)} / {Math.floor(stat / 5)}
+    {key}
+    {#if key != "SAN"}
+      - {stat} / {Math.floor(stat / 2)} / {Math.floor(stat / 5)}
+    {/if}
   </div>
 </main>
