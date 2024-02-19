@@ -6,7 +6,6 @@
   import mcgee from "../assets/mcgee.png";
   import melissa from "../assets/melissa.png";
   let picture = cliff;
-  let dummy;
   let page = "cliff";
   let description = "Cliff Bucco, Police Officer";
   const changePage = (name: string) => {
@@ -31,7 +30,6 @@
       description = "Melissa Devries, Biologist";
       picture = melissa;
     }
-    dummy = Math.random();
   };
 </script>
 

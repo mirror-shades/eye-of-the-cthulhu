@@ -4,7 +4,9 @@
 
 <div class="flex items-center justify-center">
   <div class="card m-6 w-96 bg-base-100 border shadow-xl">
-    <u class="text-center">Inventory</u>
-    <div class="text-center">{inventory}</div>
+    <div class="m-2 text-center">
+      <u>Inventory</u>
+      <p>{inventory}</p>
+    </div>
   </div>
 </div>

@@ -178,7 +178,7 @@
       {/each}
       <StatBlock {rollStat} stat={playerSan} key="SAN" />
     </ul>
-    <div class="h-12" />
+    <Inventory {inventory} />
     <ul class="columns-3">
       {#each skillsArray as [key, stat]}
         <StatBlock {rollStat} {stat} {key} />
@@ -186,8 +186,6 @@
     </ul>
     <div class="h-12" />
   </div>
-
-  <Inventory {inventory} />
 </main>
 
 <style>
