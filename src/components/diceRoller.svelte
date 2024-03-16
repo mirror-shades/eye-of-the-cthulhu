@@ -20,7 +20,7 @@
     class="menu menu-vertical lg:menu-horizontal bg-accent rounded-box text-black"
   >
     <!-- Simplify by iterating over an array of dice sides -->
-    {#each [2, 4, 6, 8, 10, 12, 20] as sides}
+    {#each [2, 3, 4, 6, 8, 10, 12, 20, 100] as sides}
       <li>
         <button on:click={() => rollDice(sides)}>d{sides}</button>
       </li>

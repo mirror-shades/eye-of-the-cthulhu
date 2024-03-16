@@ -3,7 +3,7 @@
   export let description: any;
   export let picture: any;
   import Papa from "papaparse";
-  import StatBlock from "./statBlock.svelte";
+  import StatBlock from "./StatBlock.svelte";
   import Inventory from "./Inventory.svelte";
   import { loaded } from "../state";
   const publicSheet =
@@ -72,31 +72,31 @@
       let attributes: any;
       let skillsLabels = playerData[9];
       let skills: any;
-      if (page === "cliff") {
+      if (page === "coop") {
         attributes = playerData[2];
         skills = playerData[10];
         inventory = playerData[17][1];
         playerSan = sanList[1][1];
       }
-      if (page === "emily") {
+      if (page === "britt") {
         attributes = playerData[3];
         skills = playerData[11];
         inventory = playerData[18][1];
         playerSan = sanList[2][1];
       }
-      if (page === "max") {
+      if (page === "cody") {
         attributes = playerData[4];
         skills = playerData[12];
         inventory = playerData[19][1];
         playerSan = sanList[3][1];
       }
-      if (page === "mcgee") {
+      if (page === "jordy") {
         attributes = playerData[5];
         skills = playerData[13];
         inventory = playerData[20][1];
         playerSan = sanList[4][1];
       }
-      if (page === "melissa") {
+      if (page === "eirik") {
         attributes = playerData[6];
         skills = playerData[14];
         inventory = playerData[21][1];

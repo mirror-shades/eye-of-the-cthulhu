@@ -1,34 +1,34 @@
 <script lang="ts">
   import PlayerPage from "./PlayerPage.svelte";
-  import cliff from "../assets/cliff.png";
-  import max from "../assets/max.png";
-  import emily from "../assets/emily.png";
-  import mcgee from "../assets/mcgee.png";
-  import melissa from "../assets/melissa.png";
-  let picture = cliff;
-  let page = "cliff";
-  let description = "Cliff Bucco, Police Officer";
+  import coop from "../assets/coop.png";
+  import cody from "../assets/cody.png";
+  import britt from "../assets/britt.png";
+  import jordy from "../assets/jordy.png";
+  import eirik from "../assets/eirik.png";
+  let picture = coop;
+  let page = "coop";
+  let description = "coop Bucco, Police Officer";
   const changePage = (name: string) => {
     page = name;
-    if (name === "cliff") {
-      description = "Cliff Bucco, Police Officer";
-      picture = cliff;
+    if (name === "coop") {
+      description = "Garf Barph, Logger";
+      picture = coop;
     }
-    if (name === "emily") {
+    if (name === "britt") {
       description = "Emily Rosewell, Typist";
-      picture = emily;
+      picture = britt;
     }
-    if (name === "max") {
+    if (name === "cody") {
       description = "Maximillian Hirst, Parapsychologist";
-      picture = max;
+      picture = cody;
     }
-    if (name === "mcgee") {
+    if (name === "jordy") {
       description = "Shitter Mc'Gee, Professor of Geology";
-      picture = mcgee;
+      picture = jordy;
     }
-    if (name === "melissa") {
+    if (name === "eirik") {
       description = "Melissa Devries, Biologist";
-      picture = melissa;
+      picture = eirik;
     }
   };
 </script>
@@ -41,36 +41,36 @@
       <li>
         <button
           on:click={() => {
-            changePage("cliff");
-          }}><p>Cliff</p></button
+            changePage("coop");
+          }}><p>coop</p></button
         >
       </li>
       <li>
         <button
           on:click={() => {
-            changePage("emily");
-          }}>Emily</button
+            changePage("britt");
+          }}>britt</button
         >
       </li>
       <li>
         <button
           on:click={() => {
-            changePage("max");
-          }}>Maximillian</button
+            changePage("cody");
+          }}>codyimillian</button
         >
       </li>
       <li>
         <button
           on:click={() => {
-            changePage("mcgee");
-          }}>McGee</button
+            changePage("jordy");
+          }}>jordy</button
         >
       </li>
       <li>
         <button
           on:click={() => {
-            changePage("melissa");
-          }}>Melissa</button
+            changePage("eirik");
+          }}>eirik</button
         >
       </li>
     </ul>
