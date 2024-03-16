@@ -7,7 +7,7 @@
   import eirik from "../assets/eirik.png";
   let picture = coop;
   let page = "coop";
-  let description = "coop Bucco, Police Officer";
+  let description = "Garf Barph, Logger";
   const changePage = (name: string) => {
     page = name;
     if (name === "coop") {
@@ -42,35 +42,35 @@
         <button
           on:click={() => {
             changePage("coop");
-          }}><p>coop</p></button
+          }}><p>Garf</p></button
         >
       </li>
       <li>
         <button
           on:click={() => {
             changePage("britt");
-          }}>britt</button
+          }}>Emily</button
         >
       </li>
       <li>
         <button
           on:click={() => {
             changePage("cody");
-          }}>codyimillian</button
+          }}>Maximillian</button
         >
       </li>
       <li>
         <button
           on:click={() => {
             changePage("jordy");
-          }}>jordy</button
+          }}>Mc'Gee</button
         >
       </li>
       <li>
         <button
           on:click={() => {
             changePage("eirik");
-          }}>eirik</button
+          }}>Melissa</button
         >
       </li>
     </ul>
